@@ -15,6 +15,7 @@ const Usermodel = new Schema({
     },
     nombreUsuario:{
         type:String,
+        unique:True,
         required:["El nombre de usuario es obligatoria"]
     },
     password:{
